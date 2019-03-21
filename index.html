@@ -4,7 +4,7 @@
         <title>Usabilidad y Accesibilidad - Práctica 05 - JavaScript</title>
         <meta charset="utf-8">
     </header>
-    <body>
+    <body onload="reset();">
         <h1>Usabilidad y Accesibilidad - Práctica 05 - JavaScript</h1>
             <h2>Tabla de las funciones/atributos más usuales</h2>
             <table>
@@ -102,9 +102,9 @@
                 </p>
                 <button onclick="tpv();">Contar</button>
                 <p>Total: <span id="outputCuenta"></span></p>
-                <p>I.G.I.C. incluído del 6,5%.</p>
+                <p>I.G.I.C. incluído.</p>
             <h2>Cantidad de elementos: párrafo, enlace y lista no ordenada</h2>
-                <button onclick="contar();">Contar</button><button onclick="reset();">Reset</button>
+                <button onclick="contar();">Contar</button>
                 <p>Cantidad de párrafos: <span id="cantidadPs"></span></p>
                 <p>Cantidad de enlaces: <span id="cantidadAs"></span></p>
                 <p>Cantidad de listas no ordenadas: <span id="cantidadULs"></span></p>   
