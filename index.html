@@ -20,21 +20,30 @@
                     <input id="inputYenes" type="number" placeholder="Yenes" oninput="toEuros(this.value, 'Y')" onchange="toEuros(this.value, 'Y')">
                 </p>
                 <p>Euros: <span id="outputEuros"></span></p>
-                <script>
-                    function toEuros(cantidad, tipo) {
-	                    if (tipo === "D")
-                        {
-    	                    document.getElementById("outputEuros").innerHTML=cantidad/1.14;
-                        }
-                        else if (tipo === "L")
-                        {
-    	                    document.getElementById("outputEuros").innerHTML=cantidad/0.87;
-                        }
-                        else
-                        {
-    	                    document.getElementById("outputEuros").innerHTML=cantidad/125.98;
-                        }
-                    }
-                </script>
+            <h2>Cantidad de elementos: párrafo, enlace y lista no ordenada</h2>
+                <button onclick="contar()">Contar</button>
+                <p>Cantidad: <span id="cantidadTags"></span></p>
+        <script>
+            function toEuros(cantidad, tipo) {
+	            if (tipo === "D")
+                {
+    	            document.getElementById("outputEuros").innerHTML=cantidad/1.14;
+                }
+                else if (tipo === "L")
+                {
+    	            document.getElementById("outputEuros").innerHTML=cantidad/0.87;
+                }
+                else
+                {
+    	            document.getElementById("outputEuros").innerHTML=cantidad/125.98;
+                }
+            }
+            function contar(){
+                var cantidad = document.getElementsByTagName("p").length;
+                cantidad += document.getElementsByTagName("a").length;
+                cantidad += document.getElementsByTagName("ul").length;
+                document.getElementById("cantidadTags").innerHTML=cantidad;
+            }
+        </script>
     </body>
 </html>
