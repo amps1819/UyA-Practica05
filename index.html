@@ -22,7 +22,9 @@
                 <p>Euros: <span id="outputEuros"></span></p>
             <h2>Cantidad de elementos: párrafo, enlace y lista no ordenada</h2>
                 <button onclick="contar()">Contar</button>
-                <p>Cantidad: <span id="cantidadTags"></span></p>
+                <p>Cantidad de párrafos: <span id="cantidadPs"></span></p>
+                <p>Cantidad de enlaces: <span id="cantidadAs"></span></p>
+                <p>Cantidad de listas no ordenadas: <span id="cantidadULs"></span></p>   
         <script>
             function toEuros(cantidad, tipo) {
 	            if (tipo === "D")
@@ -39,10 +41,9 @@
                 }
             }
             function contar(){
-                var cantidad = document.getElementsByTagName("p").length;
-                cantidad += document.getElementsByTagName("a").length;
-                cantidad += document.getElementsByTagName("ul").length;
-                document.getElementById("cantidadTags").innerHTML=cantidad;
+                document.getElementById("cantidadPs").innerHTML = document.getElementsByTagName("p").length;
+                document.getElementById("cantidadAs").innerHTML = document.getElementsByTagName("a").length;
+                document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
             }
         </script>
     </body>
