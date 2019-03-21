@@ -18,3 +18,8 @@ function contar(){
     document.getElementById("cantidadAs").innerHTML = document.getElementsByTagName("a").length;
     document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
 }
+function reset(){
+    document.getElementById("cantidadPs").innerHTML = null;
+    document.getElementById("cantidadAs").innerHTML = null;
+    document.getElementById("cantidadULs").innerHTML = null;
+}
