@@ -1,2 +1,1 @@
-# UyA-Practica05
-Usabilidad y Accesibilidad - Práctica 05 - JavaScript
+# Usabilidad y Accesibilidad - Práctica 05 - JavaScript  
