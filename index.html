@@ -67,17 +67,42 @@
                 <p>Introduce el valor que quieras convertir a euros.</p>
                 <p>
                     <label>Dolares</label>
-                    <input id="inputDolares" type="number" placeholder="Dolares" oninput="toEuros(this.value, 'D');" onchange="toEuros(this.value, 'D');">
+                    <input id="inputDolares" type="number" placeholder="Dolares" oninput="conversor('dolar', this.value);">
                 </p>
                 <p>
                     <label>Libras</label>
-                    <input id="inputLibras" type="number" placeholder="Libras" oninput="toEuros(this.value, 'L');" onchange="toEuros(this.value, 'L');">
+                    <input id="inputLibras" type="number" placeholder="Libras" oninput="conversor('libra', this.value);">
                 </p>
                 <p>
                     <label>Yenes</label>
-                    <input id="inputYenes" type="number" placeholder="Yenes" oninput="toEuros(this.value, 'Y');" onchange="toEuros(this.value, 'Y');">
+                    <input id="inputYenes" type="number" placeholder="Yenes" oninput="conversor('yen', this.value);">
                 </p>
                 <p>Euros: <span id="outputEuros"></span></p>
+            <h2>Cesta de la compra</h2>
+                <p>Selecciona las cantidades/kilos.</p>
+                <p>
+                    <label>Leche (tetrabrik)</label>
+                    <input id="inputLeche" type="number" placeholder="Leche">
+                </p>
+                <p>
+                    <label>Yogures (pack de 6)</label>
+                    <input id="inputYogures" type="number" placeholder="Yogures">
+                </p>
+                <p>
+                    <label>Lentejas (paquete)</label>
+                    <input id="inputLentejas" type="number" placeholder="Lentejas">
+                </p>
+                <p>
+                    <label>Cebollas (kilo)</label>
+                    <input id="inputCebollas" type="number" placeholder="Cebollas">
+                </p>
+                <p>
+                    <label>Melocotones (kilo)</label>
+                    <input id="inputMelocotones" type="number" placeholder="Melocotones">
+                </p>
+                <button onclick="tpv();">Contar</button>
+                <p>Total: <span id="outputCuenta"></span></p>
+                <p>I.G.I.C. incluído.</p>
             <h2>Cantidad de elementos: párrafo, enlace y lista no ordenada</h2>
                 <button onclick="contar();">Contar</button><button onclick="reset();">Reset</button>
                 <p>Cantidad de párrafos: <span id="cantidadPs"></span></p>
