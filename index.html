@@ -2,6 +2,7 @@
 <html>
     <header>
         <title>Usabilidad y Accesibilidad - Práctica 05 - JavaScript</title>
+        <meta charset="utf-8">
     </header>
     <body>
         <h1>Usabilidad y Accesibilidad - Práctica 05 - JavaScript</h1>
@@ -25,26 +26,6 @@
                 <p>Cantidad de párrafos: <span id="cantidadPs"></span></p>
                 <p>Cantidad de enlaces: <span id="cantidadAs"></span></p>
                 <p>Cantidad de listas no ordenadas: <span id="cantidadULs"></span></p>   
-        <script>
-            function toEuros(cantidad, tipo) {
-	            if (tipo === "D")
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/1.14;
-                }
-                else if (tipo === "L")
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/0.87;
-                }
-                else
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/125.98;
-                }
-            }
-            function contar(){
-                document.getElementById("cantidadPs").innerHTML = document.getElementsByTagName("p").length;
-                document.getElementById("cantidadAs").innerHTML = document.getElementsByTagName("a").length;
-                document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
-            }
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
