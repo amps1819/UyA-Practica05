@@ -5,36 +5,36 @@
     </header>
     <body>
         <h1>Usabilidad y Accesibilidad - Práctica 05 - JavaScript</h1>
-        <h2>Conversor de divisas</h2>
-            <p>Introduce el valor que quieras convertir a euros</p>
-            <p>
-                <label>Dolares</label>
-                <input id="inputDolares" type="number" placeholder="Dolares" oninput="toEuros(this.value, 'D')" onchange="toEuros(this.value, 'D')">
-            </p>
-            <p>
-                <label>Libras</label>
-                <input id="inputLibras" type="number" placeholder="Libras" oninput="toEuros(this.value, 'L')" onchange="toEuros(this.value, 'L')">
-            </p>
-            <p>
-                <label>Yenes</label>
-                <input id="inputYenes" type="number" placeholder="Yenes" oninput="toEuros(this.value, 'Y')" onchange="toEuros(this.value, 'Y')">
-            </p>
-            <p>Euros: <span id="outputEuros"></span></p>
-        <script>
-            function toEuros(cantidad, tipo) {
-	            if (tipo === "D")
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/1.14;
-                }
-                else if (tipo === "L")
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/0.87;
-                }
-                else
-                {
-    	            document.getElementById("outputEuros").innerHTML=cantidad/125.98;
-                }
-            }
-        </script>
+            <h2>Conversor de divisas</h2>
+                <p>Introduce el valor que quieras convertir a euros</p>
+                <p>
+                    <label>Dolares</label>
+                    <input id="inputDolares" type="number" placeholder="Dolares" oninput="toEuros(this.value, 'D')" onchange="toEuros(this.value, 'D')">
+                </p>
+                <p>
+                    <label>Libras</label>
+                    <input id="inputLibras" type="number" placeholder="Libras" oninput="toEuros(this.value, 'L')" onchange="toEuros(this.value, 'L')">
+                </p>
+                <p>
+                    <label>Yenes</label>
+                    <input id="inputYenes" type="number" placeholder="Yenes" oninput="toEuros(this.value, 'Y')" onchange="toEuros(this.value, 'Y')">
+                </p>
+                <p>Euros: <span id="outputEuros"></span></p>
+                <script>
+                    function toEuros(cantidad, tipo) {
+	                    if (tipo === "D")
+                        {
+    	                    document.getElementById("outputEuros").innerHTML=cantidad/1.14;
+                        }
+                        else if (tipo === "L")
+                        {
+    	                    document.getElementById("outputEuros").innerHTML=cantidad/0.87;
+                        }
+                        else
+                        {
+    	                    document.getElementById("outputEuros").innerHTML=cantidad/125.98;
+                        }
+                    }
+                </script>
     </body>
 </html>
