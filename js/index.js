@@ -31,7 +31,7 @@ function tpv(){
     temp += precios['lentejas'] * document.getElementById("inputLentejas").value;
     temp += precios['cebollas'] * document.getElementById("inputCebollas").value;
     temp += precios['melocotones'] * document.getElementById("inputMelocotones").value;
-    temp += (0.065 * temp); // 6,5% IGIC general (desde el 01/01/2019)
+    temp += (0.065 * temp); // 6,5% IGIC general
     document.getElementById("outputCuenta").innerHTML = temp+" euros";
 }
 
