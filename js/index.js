@@ -31,7 +31,7 @@ function tpv(){
     temp += precios['lentejas'] * document.getElementById("inputLentejas").value;
     temp += precios['cebollas'] * document.getElementById("inputCebollas").value;
     temp += precios['melocotones'] * document.getElementById("inputMelocotones").value;
-    temp += (0.065 * temp); // 6,5% IGIC general
+    temp += (0.065 * temp); // 6,5% I.G.I.C. general
     document.getElementById("outputCuenta").innerHTML = temp+" euros";
 }
 
