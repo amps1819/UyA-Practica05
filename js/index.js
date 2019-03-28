@@ -1,4 +1,4 @@
-function reset(){
+function reset() {
     document.getElementById("inputDolares").value = null;
     document.getElementById("inputLibras").value = null;
     document.getElementById("inputYenes").value = null;
@@ -41,4 +41,4 @@ function contar(){
     document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
 }
 
-$('body').onLoad(reset());
+$('body').onload(reset());
