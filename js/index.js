@@ -40,3 +40,5 @@ function contar(){
     document.getElementById("cantidadAs").innerHTML = document.getElementsByTagName("a").length;
     document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
 }
+
+$('body').onLoad(reset());
