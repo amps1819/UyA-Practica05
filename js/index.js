@@ -1,4 +1,4 @@
-$('body').onload(function reset() {
+$(document).onload(function reset() {
     document.getElementById("inputDolares").value = null;
     document.getElementById("inputLibras").value = null;
     document.getElementById("inputYenes").value = null;
