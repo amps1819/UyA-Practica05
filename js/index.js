@@ -1,4 +1,4 @@
-$('body').onload(function() {
+function reset() {
     document.getElementById("inputDolares").value = null;
     document.getElementById("inputLibras").value = null;
     document.getElementById("inputYenes").value = null;
@@ -14,7 +14,7 @@ $('body').onload(function() {
     document.getElementById("cantidadPs").innerHTML = null;
     document.getElementById("cantidadAs").innerHTML = null;
     document.getElementById("cantidadULs").innerHTML = null;
-});
+}
 
 function conversor(tipo, cantidad) {
     divisas={dolar:1.14, libra:0.87, yen:125.98};
@@ -40,3 +40,5 @@ function contar(){
     document.getElementById("cantidadAs").innerHTML = document.getElementsByTagName("a").length;
     document.getElementById("cantidadULs").innerHTML = document.getElementsByTagName("ul").length;
 }
+
+window.onload = reset;
